@@ -19,6 +19,13 @@ gem 'unicode'
 
 group :development, :test do
   gem 'byebug'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'factory_girl_rails'
+end
+
+group :test do
+  gem 'faker'
+  gem 'capybara-webkit'
 end
 
 group :development do

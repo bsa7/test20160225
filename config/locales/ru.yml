@@ -1,0 +1,12 @@
+ru:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: Запись некорректная
+      models:
+        user:
+          attributes:
+            email:
+              blank: email пользователя не может быть пустым
+            name:
+              blank: Имя пользователя не может быть пустым
