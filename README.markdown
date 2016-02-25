@@ -4,11 +4,11 @@ user can register, login to account, manage collections and edit each collection
 
 ### Application scripts
 'do' - is a script which doing a some stuff:
-#### sync_repo
+#### stuff can be a 'sync_repo', 'push_to_servers', 'pull_from_servers'
 we call it with:
 
 ```bash
-    $ ./do sync_repo [commit_message]
+    $ ./do stuff [commit_message]
 ```
 
 If we pass the commit message, git commit -m [commit_message] will be called,
