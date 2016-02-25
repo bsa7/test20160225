@@ -16,6 +16,7 @@ gem 'puma'
 gem 'haml'
 gem 'colorize'
 gem 'unicode'
+gem "paperclip", "~> 4.3"
 
 group :development, :test do
   gem 'byebug'

@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'helpers/users_helper_spec'
 
 RSpec.describe HomeController, :type => :controller do
   include Devise::TestHelpers
@@ -11,7 +12,7 @@ RSpec.describe HomeController, :type => :controller do
     end
   end
 
-  context "when not signed in" do
+  context WHEN_NOT_AUTHORIZED do
     describe "GET 'index'" do
       it "redirects to sign in" do
         get 'index'
@@ -20,10 +21,13 @@ RSpec.describe HomeController, :type => :controller do
     end
   end
 
-  context "when signed in" do
+  context WHEN_AUTHORIZED do
+    before(:each) do
+      login_user
+    end
+
     describe "GET 'index'" do
       it "signed users access to index" do
-        login_user
         get 'index'
         expect(response).to be_success
       end
