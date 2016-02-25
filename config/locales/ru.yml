@@ -9,7 +9,12 @@ ru:
             email:
               blank: email пользователя не может быть пустым
               invalid: email некорректный
+            full_description:
+              too_short: Описание пользователя слишком скудное, дайте больше знать о себе
             name:
               blank: Имя пользователя не может быть пустым
             password:
               blank: пароль не может быть пустым
+  faker:
+    name:
+      wrong_email: ['email', '@', 'email@', 'email@,ru', '@email']
