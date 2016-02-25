@@ -8,5 +8,8 @@ ru:
           attributes:
             email:
               blank: email пользователя не может быть пустым
+              invalid: email некорректный
             name:
               blank: Имя пользователя не может быть пустым
+            password:
+              blank: пароль не может быть пустым
